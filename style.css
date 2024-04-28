@@ -1,0 +1,317 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eda155;
+    
+}
+
+
+.navbar {
+    background-color: #EADBC8;
+    
+    
+}
+
+#container {
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo_title {
+    font-size: 30px;
+    color: #333;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem 2rem;
+}
+
+.menu li {
+    display: inline;
+
+}
+
+.menu li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #e6b079;
+}
+
+#logo_img img{
+    width: 60px;
+    height: auto;
+    scale: 1.2;
+    border-radius: 100%;
+    margin:0.2rem 1rem
+}
+
+#destaques{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #FEFAF6;
+    
+}
+
+.carousel-inner{
+    display:flex;
+    border-radius: 2rem;
+    height: 500px;
+    max-width: 50rem;
+    margin: 0rem 5rem;
+
+}
+
+.carousel-item img{
+    height:100%;
+    min-width: 50rem;
+}
+#cardapio{
+    background-color: #FEFAF6;
+    flex-direction: column;
+}
+#cardapio h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+}
+
+
+#cards{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+
+}
+.card{
+    margin:1rem;
+
+}
+.card img{
+    max-height: 150px;
+}
+.card-body{
+    background-color: #fffbf868;
+
+}
+.card-body a{
+    background-color: #EADBC8;
+    color: #0e264a;
+    border:none;
+    
+
+}
+.card-body a:hover{
+    background-color: #DAC0A3;
+    color: #071428;
+    border:none;
+    scale:1.05;
+}
+#sobre{
+    background-color: #FEFAF6;
+    display: flex;
+    align-items: center;
+    padding: 2rem 8rem;
+    flex-direction: column;
+
+}
+#sobre p{
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#contato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FEFAF6;
+    padding-bottom: 2rem;
+    
+}
+#contact-title{
+    padding:2rem
+}
+
+.contatos {
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem 10rem;
+    
+}
+
+.contacts {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+.contact-info {
+    padding-right: 3rem;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-form{
+    max-width: 30rem;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #EADBC8;
+    color: #0e264a;
+    border:none;    
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #DAC0A3;
+}
+
+.rodape {
+    max-width: 50%;
+    margin: 0 auto;
+    
+}
+
+.footer {
+    background-color: #D1BB9E;
+    color: #fff;
+    padding: 20px 0; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info h3 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-icon:last-child {
+    margin-right: 0;
+}
+
+.social-icon:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    
+    .carousel-inner{
+        border-radius: 2rem;
+        height: 300px;
+        max-width: 30rem;
+        margin: 0rem 5rem;
+    
+    }
+    
+    .carousel-item img{
+        height:100%;
+        min-width: 30rem;
+    }
+    #sobre{
+        padding: 2rem 4rem;
+    
+    }
+    .contatos {
+        display:flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem 4rem;
+        
+    }
+    
+    .rodape {
+        max-width: 65%;
+        margin: 0 auto;
+        
+    }
+   
+}
+@media (max-width: 600px) {
+    
+    .carousel-inner{
+        border-radius: 2rem;
+        height: 200px;
+        max-width: 20rem;
+        margin: 0rem 5rem;
+    
+    }
+    
+    .carousel-item img{
+        height:100%;
+        min-width: 20rem;
+    }
+    #sobre{
+        padding: 2rem 2.5rem;
+    
+    }
+    .contatos {
+        display:flex;
+        flex-direction: column;
+        padding: 1rem 3rem;
+        
+    }
+    
+    .rodape {
+        max-width: 80%;
+        margin: 0 auto;
+        
+    }
+   
+}
